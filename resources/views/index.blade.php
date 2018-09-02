@@ -42,11 +42,13 @@ Home
 {{-- content --}}
 @section('content')
 <div class="container">
+
     <!-- Service Section Start-->
     <div class="row">
         <!-- Responsive Section Start -->
         <div class="col-12 text-center my-3">
-            <h3 class="border-primary"><span class="heading_border bg-primary mx-auto">Áreas de Atuação</span></h3></div>
+            <h3 class="border-primary"><span class="heading_border bg-primary mx-auto">Áreas de Atuação</span></h3>
+        </div>
         <div class="col-sm-6 col-md-6 col-lg-3 wow bounceInLeft" data-wow-duration="3.5s">
             <div class="box">
                 <div class="box-icon">

@@ -230,6 +230,9 @@ Route::get('logout', 'FrontEndController@getLogout')->name('logout');
 # contact form
 Route::post('contact', 'FrontEndController@postContact')->name('contact');
 
+#form falar com especialista aposentadoria
+Route::post('index/contact-aposentadoria', 'FrontEndController@postContactAposentadoria')->name('contact-aposentadoria');
+
 #frontend views
 Route::get('/', ['as' => 'home', function () {
     return view('index');
@@ -246,7 +249,7 @@ Route::get('news/{news}', 'NewsController@show')->name('news.show');
 
 Route::get('{name?}', 'FrontEndController@showFrontEndView');
 
-Route::get('index/aposentadoria', function() {
-    return view('previdenciario');
-});
+// Route::get('index/aposentadoria', function() {
+//     return view('previdenciario');
+// });
 # End of frontend views

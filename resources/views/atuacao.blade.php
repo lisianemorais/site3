@@ -77,7 +77,7 @@
                             <li>Benefício do INSS</li>
                             <li>Outros</li>
                         </ul>
-                        <a href="{{ route('previdenciario') }}"><button type="button" class="btn btn-responsive button-alignment btn-default" data-toggle="button">Saiba mais</button> </a>
+                        <a href="previdenciario"><button type="button" class="btn btn-responsive button-alignment btn-default" data-toggle="button">Saiba mais</button> </a>
                     </div>
                     </div>
                 </div>

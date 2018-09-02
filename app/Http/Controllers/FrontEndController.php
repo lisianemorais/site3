@@ -22,6 +22,7 @@ use Sentinel;
 use URL;
 use View;
 use App\Mail\Contact;
+use App\Mail\ContactAposentadoria;
 use App\Mail\ContactUser;
 use App\Mail\ForgotPassword ;
 
@@ -367,6 +368,40 @@ class FrontEndController extends JoshController
         return redirect('contact')->with('success', trans('auth/message.contact.success'));
     }
 
+    /**
+     * Contact form processing.
+     * @param Request $request
+     * @return Redirect
+     */
+    public function postContactAposentadoria(Request $request)
+    {   
+        // var_dump("$request"); var_dump('sss'); die;
+        $data = [
+            'contact-name' => $request->get('contact-name'),
+            'contact-email' => $request->get('contact-email'),
+            'contact-telefone' => $request->get('contact-telefone'),
+            'contact-sexo' => $request->get('contact-sexo'),
+            'contact-profissao' => $request->get('contact-profissao'),
+            'contact-atividadeinsalubre' => $request->get('contact-atividadeinsalubre'),
+            'contact-tempo-insalubre' => $request->get('contact-tempo-insalubre'),
+            'contact-time-contribuicao' => $request->get('contact-time-contribuicao'),
+            'contact-msg' => $request->get('contact-msg'),
+        ];
+
+
+        // Send Email to admin
+        Mail::to('limaesouzaadvogadospoa@gmail.com')
+            ->send(new ContactAposentadoria($data));
+
+        // Send Email to user
+        Mail::to($data['contact-email'])
+            ->send(new ContactUser($data));
+
+        //Redirect to previdenciario page
+        return redirect('previdenciario')->with('success', trans('auth/message.contact.success'));
+    }
+
+    
     public function showFrontEndView($name=null)
     {
         if(View::exists($name))
