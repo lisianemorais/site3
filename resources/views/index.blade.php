@@ -29,11 +29,11 @@ Home
 @section('top')
 <!--Carousel Start -->
 <div id="owl-demo" class="owl-carousel owl-theme">
-    <div class="item img-fluid"><img src="{{ asset('assets/images/slide_1.jpg') }}" alt="slider-image"/>
+    <div class="item img-fluid"><img src="{{ asset('assets/images/idoso_aproveitando_vida2.jpg') }}" alt="slider-image"/>
     </div>
-    <div class="item img-fluid"><img src="{{ asset('assets/images/slide_2.jpg') }}" alt="slider-image">
+    <div class="item img-fluid"><img src="{{ asset('assets/images/familia_feliz.jpg') }}" alt="slider-image">
     </div>
-    <div class="item img-fluid"><img src="{{ asset('assets/images/slide_4.png') }}" alt="slider-image">
+    <div class="item img-fluid"><img src="{{ asset('assets/images/aposentadoria_especial_saude.jpg') }}" alt="slider-image">
     </div>
 </div>
 <!-- //Carousel End -->
@@ -47,7 +47,7 @@ Home
     <div class="row">
         <!-- Responsive Section Start -->
         <div class="col-12 text-center my-3">
-            <h3 class="border-primary"><span class="heading_border bg-primary mx-auto">Áreas de Atuação</span></h3>
+            <h3 class="border-default"><span class="heading_border bg-default mx-auto">Áreas de Atuação</span></h3>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-3 wow bounceInLeft" data-wow-duration="3.5s">
             <div class="box">
@@ -58,7 +58,7 @@ Home
                 <div class="info">
                     <h3 class="success text-center">Direito Previdenciário</h3>
                     <p>Regimes geral e próprios (fases administrativa e judicial).</p>
-                    <div class="text-right primary"><a href="#">Read more</a>
+                    <div class="text-right primary"><a href="#">Leia mais</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@ Home
                 <div class="info">
                     <h3 class="primary text-center">Direito do Trabalho</h3>
                     <p>Ações em geral e ações envolvendo acidente do trabalho.</p>
-                    <div class="text-right primary"><a href="#">Read more</a>
+                    <div class="text-right primary"><a href="#">Leia mais</a>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@ Home
                 <div class="info">
                     <h3 class="warning text-center">Direito Cível</h3>
                     <p>Com ênfase em direito de família e sucessões.</p>
-                    <div class="text-right primary"><a href="#">Read more</a>
+                    <div class="text-right primary"><a href="#">Leia mais</a>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@ Home
                 <div class="info">
                     <h3 class="yellow text-center">Cobranças Extrajudiciais</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <div class="text-right primary"><a href="#">Read more</a>
+                    <div class="text-right primary"><a href="#">Leia mais</a>
                     </div>
                 </div>
             </div>
@@ -120,7 +120,7 @@ Home
 <div class="container">
         <div class="text-center">
             <!-- <h3 class="border-warning""><span class="heading_border bg-warning">Diferenciais</span></h3> -->
-            <h3 class="border-success""><span class="heading_border bg-success">Diferenciais</span></h3>
+            <h3 class="border-default""><span class="heading_border bg-default">Diferenciais</span></h3>
         </div>
     </div>
 <section class="feature-main">
@@ -160,7 +160,7 @@ Home
 <div class="container">
     <div class="row text-center">
         <div class="col-12 my-3">
-            <h3 class=" border-danger"><span class="heading_border bg-danger">Perguntas Frequentes</span></h3></div>
+            <h3 class=" border-default"><span class="heading_border bg-default">Perguntas Frequentes</span></h3></div>
     </div>
     <div class="row text-center">
         <div class="col-md-6 col-sm-6 col-12 col-lg-3 profile wow fadeInLeft" data-wow-duration="3s"

@@ -10,6 +10,15 @@ include_once 'web_builder.php';
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/_debugbar/assets/stylesheets', [
+    'as' => 'debugbar-css',
+    'uses' => '\Barryvdh\Debugbar\Controllers\AssetController@css'
+]);
+
+Route::get('/_debugbar/assets/javascript', [
+    'as' => 'debugbar-js',
+    'uses' => '\Barryvdh\Debugbar\Controllers\AssetController@js'
+]);
 
 Route::pattern('slug', '[a-z0-9- _]+');
 
@@ -232,12 +241,14 @@ Route::post('contact', 'FrontEndController@postContact')->name('contact');
 
 #form falar com especialista aposentadoria
 Route::post('index/contact-aposentadoria', 'FrontEndController@postContactAposentadoria')->name('contact-aposentadoria');
-
+Route::get('aboutus','FrontEndController@showAboutUs')->name('aboutus');
+Route::get('aboutus', ['as' => 'aboutus', function () {
+    return view('aboutus');
+}]);
 #frontend views
 Route::get('/', ['as' => 'home', function () {
     return view('index');
 }]);
-
 Route::get('blog','BlogController@index')->name('blog');
 Route::get('blog/{slug}/tag', 'BlogController@getBlogTag');
 Route::get('blogitem/{slug?}', 'BlogController@getBlog');

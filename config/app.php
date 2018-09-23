@@ -179,6 +179,9 @@ return [
         \InfyOm\CoreTemplates\CoreTemplatesServiceProvider::class,
         \InfyOm\GeneratorBuilder\GeneratorBuilderServiceProvider::class,
         Spatie\Analytics\AnalyticsServiceProvider::class,
+
+        Barryvdh\Debugbar\ServiceProvider::class,
+
     ],
 
     /*
@@ -240,6 +243,8 @@ return [
         'Flash' => Laracasts\Flash\Flash::class,
         'Charts' => ConsoleTVs\Charts\Facades\Charts::class,
         'Analytics' => Spatie\Analytics\AnalyticsFacade::class,
+
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
 ];

@@ -426,7 +426,7 @@ blockquote {
 
 
 .navbar-light .navbar-nav .nav-link {
-    color: #777;
+    color: #fdfbfb;
 }
 .mt10{
     margin-top: 10px;
@@ -454,7 +454,7 @@ blockquote {
 @media(min-width:1023px) and (max-width:1024px){
 
     .navbar-light .navbar-nav .nav-link {
-        color: #777;
+        color: #fdfbfb;
         font-size: 11px;
     }
 }
