@@ -24,12 +24,12 @@ Home
 
 <!--end of page level css-->
 @stop
-
+{{--/var/www/html/site/resources/assets/images/aposentadoria-idade.jpg--}}
 {{-- slider --}}
 @section('top')
 <!--Carousel Start -->
-<div id="owl-demo" class="owl-carousel owl-theme">
-    <div class="item img-fluid"><img src="{{ asset('assets/images/idoso_aproveitando_vida2.jpg') }}" alt="slider-image"/>
+<div id="owl-demo" class="owl-carousel owl-theme" style="width: 100%;">
+    <div class="item img-fluid"><img src="{{ asset('assets/images/aposentado-viajando.jpg') }}" alt="slider-image"/>
     </div>
     <div class="item img-fluid"><img src="{{ asset('assets/images/familia_feliz.jpg') }}" alt="slider-image">
     </div>
@@ -166,17 +166,16 @@ Home
         <div class="col-md-6 col-sm-6 col-12 col-lg-3 profile wow fadeInLeft" data-wow-duration="3s"
              data-wow-delay="0.5s">
             <div class="thumbnail bg-white">
-                <img src="{{ asset('assets/images/foto-para-ilustrar-segurado-que-deseja-se-aposentar.png') }}" alt="team-image" class="img-fluid">
+                <img src="{{ asset('assets/images/trabalhador-rural-inss.png') }}" alt="team-image" class="img-fluid">
                 <div class="caption">
                      <b>Quero me aposentar</b>
                         <br />
                     <p class="text-center"> Mas não sei o que fazer</p>
                     <div class="divide">
-                        <a href="faq#question1" class="divider">
+                        <a href="{{ URL::to('contact') }}"  class="divider">
                             <i class="livicon" data-name="hand-right" data-size="22" data-loop="true" data-c="#3a5795"
                                data-hc="#3a5795"></i>Saiba Mais
                         </a>
-                        
                     </div>
                 </div>
             </div>
@@ -184,13 +183,13 @@ Home
         <div class="col-md-6 col-sm-6 col-lg-3 col-12 profile wow fadeInUp" data-wow-duration="3s"
              data-wow-delay="0.5s">
             <div class="thumbnail bg-white">
-                <img src="{{ asset('assets/images/foto-para-ilustrar-segurado-com-auxílio-negado-98x96.png') }}" alt="team-image">
+                <img src="{{ asset('assets/images/auxilio-negado.jpg') }}" alt="team-image">
                 <div class="caption">
                    <b>Meu auxílio foi negado</b>
                         <br />
                     <p class="text-center"> O que faço agora? </p>
                     <div class="divide">
-                        <a href="#" class="divider">
+                        <a href="{{ URL::to('contact') }}"  class="divider">
                             <i class="livicon" data-name="hand-right" data-size="22" data-loop="true" data-c="#3a5795"
                                data-hc="#3a5795"></i>Saiba Mais
                         </a>
@@ -201,12 +200,12 @@ Home
         <div class="col-md-6 col-sm-6 col-lg-3 col-12 profile wow fadeInDown" data-wow-duration="3s"
              data-wow-delay="0.5s">
             <div class="thumbnail bg-white">
-                <img src="{{ asset('assets/images/foto-para-ilustrar-pessoa-avaliando-valor-da-aposentadoria-1-99x96.png') }}" alt="team-image" class="img-fluid">
+                <img src="{{ asset('assets/images/aposentadoria-aumento.jpg') }}" alt="team-image" class="img-fluid">
                 <div class="caption">
                     <b>Minha aposentadoria está muito baixa!</b>
                     <p class="text-center"> Tem algo que eu possa fazer? </p>
                     <div class="divide">
-                        <a href="#" class="divider">
+                        <a href="{{ URL::to('contact') }}"  class="divider">
                             <i class="livicon" data-name="hand-right" data-size="22" data-loop="true" data-c="#3a5795"
                                data-hc="#3a5795"></i>Saiba Mais
                         </a>
@@ -218,12 +217,12 @@ Home
         <div class="col-md-6 col-sm-6 col-lg-3 col-12 profile wow fadeInRight" data-wow-duration="3s"
              data-wow-delay="0.5s">
             <div class="thumbnail bg-white">
-                <img src="{{ asset('assets/images/foto-para-ilustrar-segurado-com-auxílio-negado-98x96.png') }}" alt="team-image">
+                <img src="{{ asset('assets/images/Como-pagar-dividas-revisional.jpg') }}" alt="team-image">
                 <div class="caption">
-                    <b>Sam Bellows</b>
-                    <p class="text-center"> Manager </p>
+                    <b>Os juros do financiamento estão muito altos</b>
+                    <p class="text-center"> Posso fazer uma revisional? </p>
                     <div class="divide">
-                        <a href="#" class="divider">
+                        <a href="{{ URL::to('contact') }}"  class="divider">
                             <i class="livicon" data-name="hand-right" data-size="22" data-loop="true" data-c="#3a5795"
                                data-hc="#3a5795"></i>Saiba Mais
                         </a>

@@ -50,38 +50,44 @@ Previdenciário
 {{-- Page content --}}
 @section('content')
     <section class="container-fluid banner"  id="banner-background" data-editable="true" data-content="background" >
-        <div class="banner--cover"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12"></div>
-            </div>
-            <div class="row banner--title--wrapper">
-                <div class="col-xs-12 col-sm-7 col-md-7">
-                    <h1 id="banner-title" class="banner--title" data-editable="true">
-                        <span style="font-size: 36px; line-height: 100%; color: #fff;">
-                            <span style="display: inline-block; line-height: 100%;">
-                                Consulte a situação da sua Aposentadoria Especial com um de nossos especialistas!
-                            </span>
-                            <br>
-                            <br>
-                            <span style="color: #fffb00;"> Preencha o formulario ao lado!</span>
-
-                        </span>
-                    </h1>
-                </div>
-            </div>
-        </div>
-        <div class="image-container"> 
+        <span class="titulo-previdenciario">
+            <h1>PREVIDENCIÁRIO</h1>
+        </span>
+        <div class="image-container">
             <div class="section-background-image">
-                
+                <img src="{{ asset('assets/images/idoso-feliz2.jpg') }}" alt="previdenciario">
             </div>
         </div>
+        <div class="container faq-previdenciario-banner">
+            <span style="background-color: rgba(0, 0, 0, 0.2);font-size: 36px;">Consulte a situação da sua Aposentadoria Especial ou Auxílio doença com um de nossos especialistas
+            </span>
+            {{--<div class="row banner--title--wrapper">--}}
+                {{--<div class="col-xs-12 col-sm-7 col-md-7">--}}
+                    {{--<h1 id="banner-title" class="banner--title" data-editable="true">--}}
+                        {{--<span style="font-size: 36px; line-height: 100%; color: #fff;">--}}
+                            {{--<span style="display: inline-block; line-height: 100%;">--}}
+                                {{--Consulte a situação da sua Aposentadoria Especial com um de nossos especialistas!--}}
+                            {{--</span>--}}
+                            {{--<br>--}}
+                            {{--<br>--}}
+                            {{--<span style="color: #fffb00;"> Preencha o formulario ao lado!</span>--}}
+
+                        {{--</span>--}}
+                    {{--</h1>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        </div>
+        {{--<div class="image-container"> --}}
+            {{--<div class="section-background-image">--}}
+                {{--<img src="{{ asset('assets/images/idoso-feliz2.jpg') }}" alt="previdenciario">--}}
+            {{--</div>--}}
+        {{--</div>--}}
     </section>
-    <section id="content-background" class="container-fluid section" data-editable="true" data-content="background">
+    <section id="content-background" class="container-fluid faq-previdenciario section" data-editable="true" data-content="background">
         <!-- Container Section Start -->
         <div class="container my-3">
             <!--Content Section Start -->
-            <h2 id="portfolio_title">Previdenciário</h2>
+            {{--<h2 id="portfolio_title">Previdenciário</h2>--}}
 
             <div class="row">
                 <!-- Images Section Start -->
@@ -92,13 +98,13 @@ Previdenciário
                             <button class="btn filter btn-primary" data-filter=".category-1">Aposentadorias</button>
                             <button class=" btn filter btn-primary" data-filter=".category-2">Pensões</button>
                             <button class=" btn filter btn-primary" data-filter=".category-3">Benefícios</button> -->
-                            <a href="#aposentadoria"><button class="btn btn-primary">Aposentadorias</button></a>
-                            <a href="#pensoes"><button class=" btn btn-primary">Pensões</button></a>
-                            <a href="#beneficios"><button class=" btn btn-primary">Benefícios</button></a>
+                            {{--<a href="#aposentadoria"><button class="btn btn-primary">Aposentadorias</button></a>--}}
+                            {{--<a href="#pensoes"><button class=" btn btn-primary">Pensões</button></a>--}}
+                            {{--<a href="#beneficios"><button class=" btn btn-primary">Benefícios</button></a>--}}
                         </div>
                         <section id="aposentadoria">
                             <div class="col-12 text-center my-3">
-                                <h3 class="border-primary"><span class="heading_border bg-primary mx-auto">Aposentadorias</span></h3>
+                                <h3 class="border-default"><span class="heading_border bg-default mx-auto">Aposentadorias</span></h3>
                             </div>
                             <div class="row">
                                 <div class="col-12">
@@ -124,7 +130,7 @@ Previdenciário
                         </section>
                         <section id="pensoes">
                             <div class="col-12 text-center my-3">
-                                <h3 class="border-primary"><span class="heading_border bg-primary mx-auto">Pensões</span></h3>
+                                <h3 class="border-default"><span class="heading_border bg-default mx-auto">Pensões</span></h3>
                             </div>
                             <div class="row">
                                 <div class="mix category-3 text-center" data-my-order="1">
@@ -164,7 +170,7 @@ Previdenciário
                         </section>
                         <section id="beneficios">
                             <div class="col-12 text-center my-3">
-                                <h3 class="border-primary"><span class="heading_border bg-primary mx-auto">Benefícios</span></h3>
+                                <h3 class="border-default"><span class="heading_border bg-default mx-auto">Benefícios</span></h3>
                             </div>
                             <div class="row">
                                 <div class="mix category-2 text-center" data-my-order="1">
@@ -187,7 +193,7 @@ Previdenciário
                         </section>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 formulario-previdenciario">
                     <div class="banner--form">
                         <div id="conversion" class="right" data-editable="true" data-content="conversion" data-editor-position="inside">
                             <header>
@@ -214,18 +220,18 @@ Previdenciário
                                         <input type="tel" name="contact-telefone" class="form-control input-lg" placeholder="Telefone" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="feminino"> Feminino
-                                            <input type="radio" name="contact-sexo" id="feminino" class="form-control input-lg">
+                                        <label for="feminino" class="label-white"> Feminino
+                                            <input type="radio" name="contact-sexo" id="feminino" class="form-control input-lg label-white">
                                         </label>
-                                        <label for="masculino"> Masculino
-                                            <input type="radio" name="contact-sexo" id="masculino" class="form-control input-lg">
+                                        <label for="masculino" class="label-white"> Masculino
+                                            <input type="radio" name="contact-sexo" id="masculino" class="form-control input-lg label-white">
                                         </label>
                                     </div>
                                     <div class="form-group">
                                         <input type="text" name="contact-profissao" class="form-control input-lg" placeholder="Profissão">
                                     </div>
                                     <div class="form-group">
-                                        <label>Ja trabalhou em atividades insalubres?</label>
+                                        <label class="label-white">Ja trabalhou em atividades insalubres?</label>
                                         <select class="custom-select" name="contact-atividadeinsalubre">
                                             <option selected>Selecione</option>
                                             <option value="1">Sim</option>

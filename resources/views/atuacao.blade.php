@@ -63,9 +63,6 @@
                     <div class="card panel-primary">
                         <div class="card-heading">
                             <h4 class="card-title">Direito Previdenciário</h4>
-                            <span class="float-right clickable">
-                                <i class="fa fa-chevron-up"></i>
-                            </span>
                         </div>
                         <div class="card-body">
                         <p>
@@ -77,7 +74,9 @@
                             <li>Benefício do INSS</li>
                             <li>Outros</li>
                         </ul>
-                        <a href="previdenciario"><button type="button" class="btn btn-responsive button-alignment btn-default" data-toggle="button">Saiba mais</button> </a>
+                        <button class="btn btn-responsive button-alignment btn-default">
+                             <a href="{{ URL::to('previdenciario') }}"  > Saiba Mais </a>
+                        </button>
                     </div>
                     </div>
                 </div>
@@ -85,9 +84,6 @@
                     <div class="card panel-primary">
                         <div class="card-heading">
                             <h4 class="card-title">Direito Cívil</h4>
-                            <span class="float-right clickable">
-                                <i class="fa fa-chevron-up"></i>
-                            </span>
                         </div>
                         <div class="card-body">
                         <p>
@@ -98,7 +94,9 @@
                                 <li>Outros</li>
                             </ul>
                         </p>
-                        <a href=""><button type="button" class="btn btn-responsive button-alignment btn-default" data-toggle="button">Saiba mais</button> </a>
+                        <button type="button" class="btn btn-responsive button-alignment btn-default">
+                            <a href=""> Saiba mais</a>
+                        </button>
                     </div>
                     </div>
                 </div>
@@ -108,17 +106,14 @@
                     <div class="card panel-primary">
                         <div class="card-heading">
                             <h4 class="card-title">Direito Trabalhista</h4>
-                            <span class="float-right clickable">
-                                <i class="fa fa-chevron-up"></i>
-                            </span>
                         </div>
                         <div class="card-body">
                         <p>
                             Ações em geral e ações envolvendo acidente do trabalho.
-
-
                         </p>
-                        <a href=""><button type="button" class="btn btn-responsive button-alignment btn-default" data-toggle="button">Saiba mais</button> </a>
+                        <button type="button" class="btn btn-responsive button-alignment btn-default">
+                            <a href=""> Saiba mais</a>
+                        </button>
                     </div>
                     </div>
                 </div>
@@ -126,15 +121,14 @@
                     <div class="card panel-primary">
                         <div class="card-heading">
                             <h4 class="card-title">Direito Bancário</h4>
-                            <span class="float-right clickable">
-                                <i class="fa fa-chevron-up"></i>
-                            </span>
                         </div>
                         <div class="card-body">
                         <p>
                             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
                         </p>
-                        <a href=""><button type="button" class="btn btn-responsive button-alignment btn-default" data-toggle="button">Saiba mais</button> </a>
+                        <button type="button" class="btn btn-responsive button-alignment btn-default">
+                            <a href=""> Saiba mais</a>
+                        </button>
                     </div>
                     </div>
                 </div>
